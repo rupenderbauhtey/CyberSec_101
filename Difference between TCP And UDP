@@ -1,0 +1,32 @@
+Difference between TCP And UDP 
+
+While Going through computer networks , there is a big chance that you might have come across TCP and UDP Protocols.
+So,
+TCP stands for Transmission Control Protocol
+and
+UDP stands for User Datagram Protocol
+
+They are used prevalently in computer networks all over the world , So today let's dive into them and let's find out what are the basic key differences between TCP and UDP protocol.
+
+In TCP protocol , prior to sending packets to the receiver , a connection is established with the receiver , then the data is sent and then the connection is terminated On the other hand ,In UDP protocol , No connection is Established before sending the data packets packets are just sent to the receiver .
+
+TCP Protocol uses handshake protocols like SYN, SYN-ACK, ACK but UDP doesn't use Any handshake Protocol , that's a big reason TCP is called a connection-oriented protocol and UDP is called a connectionless protocol .
+
+In TCP Protocol, the order of the packets sent is fixed , they are related to each other with the help of headers and it rearranges the packets in a specific order but in the case of UDP Protocol there is no fixed sequence of packets.
+
+TCP is more reliable protocol as it guarantees the delivery of packets to the destination specified , An acknowledgement is sent back to the sender by the receiver after a packet is received by the receiver but when we talk about UDP , there is no guarantee that your all your data will be sent to the receiver or not , There is no acknowledgement sent by the receiver to the sender .
+
+TCP has an extensive error checking mechanism which includes flow control , re-sending of data packets and other mechanisms which keep the network lag free and smooth and recovers if any error occurs  . On the other hand UDP does have error checking mechanism sometimes but it doesn't have any recovery mechanism which can recover the lost packets in the network .
+
+Because of the extensive mechanism of error checking , using Handshake protocols and other apparent reason , TCP becomes a heavy weight protocol and as a result of this the data transmission speed in it is slower as compared to UDP but if we talk about UDP it doesn't have a big error checking mechanism and there is no packet recovery mechanism and moreover it doesn't use handshake protocols , so these factors make it a lightweight protocol and the data transmission speed is high in UDP as compared to TCP
+
+TCP is commonly used when  two single systems or even A no. of systems want to communicate with each other but UDP is used mostly when one wants to Broadcast or multicast and in some technologies like VoIP where faster transmission is important than error checking or recovery of packets .
+
+
+
+
+
+
+
+
+
