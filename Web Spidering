@@ -1,0 +1,18 @@
+
+Web Spidering
+
+It is the the process of crawling through the web applications for the links of all the pages of the website and link to the other parts of the website.It is very important in web application penetration testing because to test the whole web application you should be able to reach every corner of the web application which is very difficult if done manually.. Crawlers do it by parsing the pages for links or for other content , then they request the links and then parse the new pages for the links or content and the cycle continues until no link or content is found to go further.
+What do web crawlers do when there is a HTML form ??
+Sometimes there are forms and and other inputs fields which lead to other pages and parts , for them the crawlers feed them with preset values or any random values
+for example- if there is a login page so the automated web crawlers generally give admin or user in username field and pass in password field.
+
+What are the disadvantages of Automated spidering ??
+Sometimes when dealing with html forms specially with login forms..most of the time web spiders enter wrong username and password in the login form which stops them from accessing the functionality which is given to a authenticated user
+Even if they are configured to enter the right username and password . while parsing the links on the page , they eventually click the logout button which ends the session and again they have to login and sometimes again they eventually hit the logout button and again it ends the session and the cycle goes on
+
+Some web spider which do decent job-
+
+Burp Suite,
+WebScarab,
+Zed Attack Proxy
+CAT
