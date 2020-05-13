@@ -1,0 +1,20 @@
+
+Mapping the Application by inference from public content and Brute Force Technique .
+
+So , As we all know that bruteforce is a technique in which we test n no. of keys or values within a very short period of time by the help of a machine .
+First coming to the brute force technique , it can be used to discover new possible directories of a web application .
+So now the question arises how do we do that ?
+As we Know that , In REST Urls most of the things after a "/" are directories
+for Example - https://example.com/auth/Forgotpassword
+
+In this example after "/" we have a directory named auth in which there is a functionality named "Forgotpassword" .
+So whenever we will do bruteforce we will do it on the part only which is after the "/".
+In bruteforce we will be testing hundreds and thousands of the directory locations by testing each and every location present in the list .
+This is done by many spidering softwares itself , the test a directory location and then save the responses given by the server .
+Then out of those results we have to filter out the responses
+the responses which we got from the successful requests,
+To check if the responses have some real pages or not . Check the content length, Sometimes the response codes can mislead you . So check for the content length , the responses which actually have valid pages sent by the server will have bigger content length than the other ones which are not having any content page.
+
+BY THIS TECHNIQUE SOMETIMES WE FIND THE FUNCTIONALITIES OR DIRECTORIES WHICH ARE NOT INTENDED TO BE SHOWN BY THE SERVER OR WEB APPLICATIONS.
+
+
