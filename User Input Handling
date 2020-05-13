@@ -1,0 +1,40 @@
+User Input Handling 
+
+
+
+Web applications accept inputs from users in the form texts files etc.
+User Input is always treated as malicious and always checked for malicious codes or commands
+So How the Web Applications handle user Inputs.
+
+1. Reject Known bad
+
+In this type of mechanism , The web application creates or is feeded  with a blacklist which contains a list of strings or characters which should be blocked . So the web application blocks those strings and characters and allows everything else
+
+2. Accept Known good
+In this type of mechanism . The web application is provided with a list of white-listed strings and characters which should be allowed in an input field . so, the web application allow only those strings and characters and reject all other inputs
+
+3. Sanitization
+In this Mechanism , The web application doesn't reject any input from the user . But it sanitizes it , which means once the user has given  input then the web application processes it and removes or encodes the strings and characters which can be potentially  malicious .
+
+4. Boundary Validation
+It is a technique in which the user supplied data and inputs are checked on each boundary even after the input is sanitized on the client side  but every component in the network will treat the data as it is coming from a malicious source . For example a user has given an input and it is sanitized at the user end and the input is forwarded to the server , now the server side software will also sanitize it and then send it to the database now the database will also sanitize it before taking it in .
+
+
+
+
+
+
+
+5. Multi step Validation
+In this type of  Mechanism the web application sanitizes the input until any malicious string or character are not left in the input.
+for example - if someone writes < script > like this
+<scri<script>pt>
+the web application checks it once and removes the outer script
+the remaining part will be
+<script>
+that is more than enough to perform any attack . So to fight this, multi-step validation or you can say recursive sanitization is introduced
+this mechanism will work until no malicious character or string is left in the input
+
+So, this is how the web applications handle user inputs 
+
+
