@@ -1,0 +1,21 @@
+Http Verb Tampering
+
+So today we will talk about HTTP verb tampering , i know some people will say that it is totally waste of time to discuss about this type of vulnerability
+But personally i think , one should know about it , YOU MIGHT ENCOUNTER IT SOME DAY .
+Understanding verb first , Verb is nothing but the method by which you are sending the request , that can be GET, POST, PUT , DELETE etc, as the name suggests , we will be playing with the methods by which we are sending the request to the server
+So basically there are some resources , which can be only accessed after the HTTP Authentication ,
+So suppose , a server is configured in such a way that if a client sends a request and that request is a GET or a POST request then ask for the username and password .
+Now the moment you click on the link to access that resource , your browser sends a GET request or a POST request  by default according to the functionality you need and then it ask for the username and the password .
+Till this scenario , this mechanism works pretty well
+
+looking at the configuration again , it says if a request is by a GET method or a POST method, ask for the username and password and authenticate the user
+But if we make a request with any other method , other than GET or POST we can bypass the authentication because it is configured to only authenticate the GET and POST request , because a normal browser will only send a GET or POST request by default .
+So when we change the method / verb it doesn't even authenticate the request . That's how we can bypass Http Authentication by tampering the verb .
+
+To check which methods a web application allows , you can send a curl request to the host by the OPTIONS method or you can do the same thing by Metasploit modules and nmap nse scripts
+
+Most of the servers are not vulnerable to this flaw , but still , if you are lucky enough , you might find one
+
+
+
+
