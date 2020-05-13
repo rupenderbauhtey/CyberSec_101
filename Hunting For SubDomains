@@ -1,0 +1,29 @@
+Hunting Subdomains
+ 
+Hunting Subdomains with Sublister
+Installing
+->apt install sublist3r
+
+Searching for subdomains with sublist3r
+
+sublist3r -d google.com
+Here "-d" is for giving domains and "google.com" is the domain for which you are searching sub domains
+
+if you its taking a lot of time then you can always increase the no. of threads working on the process
+by just introducing "-t" to the command
+
+for example -
+sublist3r -d google.com  -t 100
+
+after this command 100 threads will be working to get the subdomains
+
+Searching Domains with crt.sh
+
+Another way of hunting subdomains is with crt.sh
+just go to this website , there is a search box and in that search box , write the  domain you want to hunt the subdomains for
+And Boom !!
+It lists a No. of subdomains and thats pretty much effective way to hunt for subdomains
+
+
+So when you get a list of sub domains , there will be some subdomains which are not real or false . so filter this out  you can always give this list to an amazing tool "tomnomnom/httprobe" , its an amazing tool on github and will fliter out the false domains for you . 
+
