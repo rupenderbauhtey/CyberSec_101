@@ -1,0 +1,51 @@
+A Glimpse Into an HTTP Response 
+
+
+HTTP Response-
+
+HTTP/1.1 200 OK
+Date: Tue, 19 Apr 2011 09:23:32 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Set-Cookie: tracking=tI8rk7joMx44S2Uu85nSWc
+X-AspNet-Version: 2.0.50727
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 1067
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Transitional//EN” “http://
+www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd”><html xmlns=”http://
+www.w3.org/1999/xhtml” ><head><title>Your details</title>
+
+
+The first line of every HTTP Response Contains 3 items separated by spaces
+The HTTP Version being used .
+The Numeric status code indicating the result of the request . 200 is the most seen status code that means the request was successful and the requested resources are being retrieved.
+The textual Phrase after the numeric code tells the status of the response . OK Also means that the request is accepted and the requested resource is being retrieved
+
+
+The Important or Interesting point in a Response Headers.
+
+Server - The server header tells which Web Server Software is being used. Sometimes it tells other information also like  installed modules and server operating systems.
+
+Set-Cookie- This header indicates the cookie which is sent to the browser from the server.
+the browser submits this cookie in the very next request to the server
+
+Pragma - This header tells the browser not to store the response in its cache.
+
+Expires -  This header tells the date when the response context has expired so it should not be stored in cache.
+
+The Pragma and Expires headers are used frequently when dealing with dynamic pages so that the user gets the fresh version of the content .
+
+Content-Type- This Headers tells that what type of content is shown in the response it is generally text and html.
+
+Content-Length - This header tells the length of the message in the body in Bytes.
+
+
+
+
+
+
+
+
