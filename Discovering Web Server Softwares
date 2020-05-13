@@ -1,0 +1,81 @@
+Discovering the web server softwares 
+
+Discovering The type of web server-
+
+Discovering a web server can be a very crucial step in testing a web application.
+Sometimes the web application is secure to a very great extent but the server through which it is functioning is not very secure , it can cause the website to become vulnerable to many attacks.
+For example - if a website is secure itself and doesn't have major vulnerabilities in it but the web server software on which the web application is being run is outdated or has vulnerabilities or has some backdoors than web applications can be hacked with attacking the web server or we can say the web server software
+
+So how we will know on which web server software the application in being run
+
+So the very first and basic method is to analyse the HTTP Response
+
+HTTP/1.1 200 OK
+Date: Sun, 15 Jun 2003 17:10: 49 GMT
+Server: Apache/1.3.23
+Last-Modified: Thu, 27 Feb 2003 03:48: 19 GMT
+ETag: 32417-c4-3e5d8a83
+Accept-Ranges: bytes
+Content-Length: 196
+Connection: close
+Content-Type: text/HTML
+
+In the above shown response , it is clearly shown under the Header "Server" That the web server software that is used in " Apache" Having the version no. 1.3.23.  So by analyzing the HTTP response Request we can find the web server software .
+
+In some cases the name of the web  server is not reflected, in that case "Unknown " will be written under the " Server " header..
+
+In that case you can recognize the server by the order of headers in the HTTP Response header .
+Most of the servers have their own and unique way of ordering the headers in HTTP Response .
+
+Refer to the next part of this post to see the respective order of headers of HTTP Response by different servers .
+Different HTTP Response Header orders by different servers .
+
+From an Apache 1.3.23 server:
+
+HTTP/1.1 200 OK
+Date: Sun, 15 Jun 2003 17:10: 49 GMT
+Server: Apache/1.3.23
+Last-Modified: Thu, 27 Feb 2003 03:48: 19 GMT
+ETag: 32417-c4-3e5d8a83
+Accept-Ranges: bytes
+Content-Length: 196
+Connection: close
+Content-Type: text/HTML
+
+From a From a Microsoft IIS 5.0 server
+
+HTTP/1.1 200 OK
+Server: Microsoft-IIS/5.0
+Expires: Yours, 17 Jun 2003 01:41: 33 GMT
+Date: Mon, 16 Jun 2003 01:41: 33 GMT
+Content-Type: text/HTML
+Accept-Ranges: bytes
+Last-Modified: Wed, 28 May 2003 15:32: 21 GMT
+ETag: b0aac0542e25c31: 89d
+Content-Length: 7369
+
+From a Netscape Enterprise 4.1 server:
+
+HTTP/1.1 200 OK
+Server: Netscape-Enterprise/4.1
+Date: Mon, 16 Jun 2003 06:19: 04 GMT
+Content-type: text/HTML
+Last-modified: Wed, 31 Jul 2002 15:37: 56 GMT
+Content-length: 57
+Accept-ranges: bytes
+Connection: close
+
+From a SunONE 6.1 server:
+
+HTTP/1.1 200 OK
+Server: Sun-ONE-Web-Server/6.1
+Date: Tue, 16 Jan 2007 14:53:45 GMT
+Content-length: 1186
+Content-type: text/html
+Date: Tue, 16 Jan 2007 14:50:31 GMT
+Last-Modified: Wed, 10 Jan 2007 09:58:26 GMT
+Accept-Ranges: bytes
+Connection: close
+
+
+
