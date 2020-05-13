@@ -1,0 +1,44 @@
+Information Gathering 
+
+Domain-
+
+First of all you should know which domain you are going to do testing . Knowing the domain is very important as it is the platform on which you are going to deploy all your attacks and scans.
+
+Discovering Subdomains-
+Sometimes the main domain is safe but its children sub-domains have vulnerabilities , and those vulnerabilities in sub-domains can be the reason for security breaches in the main domain . So yes discovering sub domains is an important step in web app pentesting. After that rank those sub-domains on the basis of unpopularity as the less popular subdomains have more chances of having vulnerabilities.
+
+for discovering subdomains -
+https://www.dnsdumpster.com
+https://www.virustotal.com
+
+Discovering IP address -
+Discovering IP address of the server on which the domain in hosted in important as it will be very helpful in discovering ports, services on the ports , frameworks etc
+So never forget to hunt for the IP Address.
+for finding IP Address -
+(ping example.com)
+
+Discovering the Web Server Specifications-
+As I have mentioned in my previous posts, discovering web server specifications is a crucial step as sometimes  vulnerabilities reside in web servers . for more information on this , refer to my previous post.
+for finding about the server - whatweb example.com
+
+Discovering Ports and  Services-
+
+Discover the ports and the services as ports can also be exploited to get into the server .
+ways to find open ports and services -
+nmap IP address
+In case server is blocking ping request - nmap IP address -Pn
+For Aggressive Scanning - nmap IP Address -sV
+For Detailed Information - nmap Ip Address | nmap -sC IP Address
+
+
+
+
+
+
+
+
+
+
+
+
+
