@@ -1,0 +1,40 @@
+Introduction To passive Scanning 
+
+1. Target Validation ( WHOIS , nslookup , dnsrecon)
+  It's very important to Validate your target. Suppose you are a pentester and the client gave you an IP Address and the client makes a mistake and changes a single digit and BOOM !! , You attacked the wrong machine . So that's very important to validate the target before attacking the target.
+  Some tools through which you can do that are
+  1. WHOIS
+  2. nslookup
+  3. Dnsrecon
+
+2. Finding subdomains (GOOGLE fu , dig , Nmap , Sublist3r , Bluto , crt.sh)
+  Sometimes the vulnerability doesn't lie in the main domain itself , you have to search for the sub domains of that domain , because as subdomains are so big in no. that the company doesn't care much about the less visited subdomains and as there is a famous saying , " while pentesting , always take the least travelled road "
+  Some Tools through which you can Find the subdomains are
+  1. Google- Fu ( Means using the google search engine with different parameters )
+  2. dig
+  3. Nmap
+  4. Sublist3r
+  5. Bluto
+  6. crt.sh
+
+4. Fingerprinting ( Nmap , Wappalyzer , Whatweb , BuiltWith, Netcat )
+  So this part comes under Active and passive both , In this pArt you collect the information about the Server on which the application is running , the ports , the services which are running , the architecture etc . So this gives you a better idea about the target on which are going to attack
+  Some tools to do this are
+  1. Nmap
+  2. Wappalyzer
+  3. Whatweb
+  4. BuiltWith
+  5. Netcat
+
+
+
+
+5. Data Breaches ( HaveiBeenPawned , Breach-Parse, WeLeakInfo )
+  So sometimes it happens that the host you are targeting has already faced a Data/Security Breach , so you can get an idea from that , how the attackers approached the target and what all they did etc . Sometimes it happens that  you can find the credentials that previous attackers had fetched in the attack . So this part is also very important .
+  Some Sources/Tools from where you can get this information
+  1. HaveiBeenPawned
+  2. Breach Parse
+  3. WeLeakInfo
+
+
+
