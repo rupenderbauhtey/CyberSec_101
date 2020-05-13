@@ -1,0 +1,40 @@
+Http Status Codes
+
+
+100 continue- This status code is seen when the client submits a request to the server with a body .Then this response code tells that the request headers are received and client should continue sending body.
+
+200- This Indicates that the request is received and accepted successfully and the response body contains the result of it.
+
+201- This indicates that the request is received and accepted successfully when the request is made by PUT method.
+
+301- This indicates that the requested resource has been moved to another URL and the client should use the new URL  which is reflected in the location header.
+
+302- This indicates that the browser is redirected to a new URL which is specified in the location header and the client should use the old original URL in the next request .
+
+304- This indicates that the server has instructed the browser to use its saved copy of the webpage as the webpage has not changed .
+
+400- This Indicates that the client has  submitted a bad HTTP request .
+it can be because of tampering of URL  etc
+
+401 - This indicates that the server requires HTTP Request before granting the request .
+
+403- This indicates that no one is allowed to access the requested resources , regardless of the authentication .
+
+404- This indicates that the requested resource does not exist .
+
+405- This indicates that the method used in the request is not supported by the URL .
+
+413 -  This Indicates that the body of your request is very big for the server to handle .
+
+414- This indicates that the URL used in the request is too long for the server to handle .
+
+500- This Indicates that the server has encountered an error while fulfilling your request . This can be because unwanted alteration of the request or you have submitted an unexpected input.
+
+503- This Indicated that although the web server is working fine and can respond to the request but the application accessed by web server is not responding
+
+
+
+
+
+
+
