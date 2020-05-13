@@ -1,0 +1,16 @@
+Discovering Web Applications On  A Server 
+
+Discovering web Applications on a web server can play a key role in testing a web application's security . It is a common practice of hosting several web applications on a single server . But here it creates a big issue as different web applications have different levels of security . Suppose 2 web applications are hosted on a web server , 1 of them is a banking website and other is for downloading songs . So the level of security of both of these web applications may highly differ. If a person attacks the application made for downloading songs and is able to enter the server , he can easily steal the data of the banking web application and manipulate it too.
+
+So one of the most amazing and easy  method is
+
+Reverse IP Lookup -
+Reverse IP lookup is similar to DNS inverse query , It is used to figure out how many and which other web applications are hosted on that particular server .
+
+Two websites which have  good reverse IP lookup tools
+
+Hacker Target - https://hackertarget.com/reverse-ip-lookup
+
+Domain tools - http://reverseip.domaintools.com
+
+So by giving the IP address as an input in these tools you can get the list of other web applications and websites hosted on that same server . So while checking a web application for any vulnerability or backdoor . Always check the other websites and web applications which are hosted on the same server on which the targeted website is hosted 
