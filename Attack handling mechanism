@@ -1,0 +1,39 @@
+Attack Handling Mechanism In web Applications 
+
+
+
+Web Applications Are often attacked by attackers . So how does a web applications handle those attacks and attackers ..Let's take a look Into it
+
+1 .Handling errors-
+
+
+In some types of attacks the attackers enter some malicious codes in the input fields and in error messages the web application shows him a system generated message or debug information and the attacker takes advantage of that and proceeds in his attacks . This is called bad error handling. The Application should not show in system generated message or debug report on error screen . If the Application is good at error handling then attacking it is very difficult.
+
+2. Maintaining audit logs
+
+
+In audit logs every major activity of an Application is recorded.
+for example -  successful and failed Login attempts and other Authentication events
+All The transactions, payments and all
+Access attempts which are blocked by access control systems
+Audit logs play a major role in investigating Data breaches and any other attacks as it contains records of all the major happenings of the web application .
+
+
+
+3. Alerting  Administrators
+
+When an Application Observes something unusual is happening it immediately Alert the Administrators.
+For example - a large no. of request are being received from a single IP or User .
+Request from user containing known attack strings
+In these types of scenarios the application alerts the administrators so that they can take appropriate actions
+
+
+
+4.  Reacting to attackers
+
+Sometimes the Applications react to the attackers themselves. When there is something unusual in the application from a particular IP or user .
+For Example - The web Application slows all the functionality of the website
+It repeatedly Ends that user's Session, so he have to repeatedly login or do the steps again                             
+
+
+
