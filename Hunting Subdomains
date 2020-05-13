@@ -1,0 +1,27 @@
+Identifying Web technologies
+ 
+BuiltWith
+
+builtwith.com is an amazing website where you can go and just write the URL of the website you want to search the information for . Bulithwith comes up with huge information about websites like what the website is using for analytics , what widgets they are usings , what frameworks they are using , which CDN they are using and lot more information
+
+
+
+->Wappalyzer
+
+So wappalyzer is available in both the forms , one is a web application and other is an extension . So in case of webApp you can simply go to https://www.wappalyzer.com/ and then fill the URL of the website you want to get the information of . Other way doing this thing is to just add wappalyzer as an extension in your browser , then after that whenever you will visit any website you want to target , there will be small icon next to your URL Field in you browser , you can click that icon and it will give you information about that particular website .The extension returns only very important information not all the information . Wappalyzer is more preferred as an extension rather than a web app.
+
+
+-> Whatweb
+
+WhatWeb in an inbuilt tool in kali linux , you can get information about the web technologies by this Amazing Tool , It returns a lot of information about the Technologies , sometimes it even comes up the version no.s of the technologies used and that helps a lot in enumerating the information . The Only con I feel it has is that it doesn't present the information properly , you have to dig into the information shown to get a clearer picture of everything .
+
+
+Syntax for whatweb
+
+-> whatweb google.com
+
+here google.com is the domain about which you want to get the information
+you can also pass an Ip address as an argument in WhatWeb .
+
+
+
