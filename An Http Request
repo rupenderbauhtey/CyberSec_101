@@ -1,0 +1,44 @@
+A Glimpse Into An HTTP Request
+ 
+
+HTTP Request-
+
+GET /auth/488/YourDetails.ashx?uid=129 HTTP/1.1
+Accept: application/x-ms-application, image/jpeg, application/xaml+xml,
+image/gif, image/pjpeg, application/x-ms-xbap, application/x-shockwaveflash,
+*/*
+Referer: https://mdsec.net/auth/488/Home.ashx
+Accept-Language: en-GB
+User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64;
+Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR
+3.0.30729; .NET4.0C; InfoPath.3; .NET4.0E; FDM; .NET CLR 1.1.4322)
+Accept-Encoding: gzip, deflate
+Host: mdsec.net
+Connection: Keep-Alive
+Cookie: SessionId=5B70C71F3FD4968935CDB6682E545476
+
+
+
+The First Line of The HTTP request Contains 3 items
+A verb Indicating HTTP Method ,  Which is generally get or post ...
+The requested URL  or you can say the request resource .
+The version of HTTP used .
+
+The Important or Interesting point in a request Headers
+
+Referer - This header indicates the URL from which the request has been made.
+
+User-Agent - This Header Tells That from Which browser The request has been made . Most browser use Mozilla prefix because of the historical reasons
+
+Host - This header tells the host which is being accessed . This tells the host name which is in the full URL which is being accessed . This becomes necessary when many websites are hosted on one server.
+
+Cookie - The cookie header  gives additional parameter which is given by the server in the previous response request
+
+
+
+
+
+
+
+
+
