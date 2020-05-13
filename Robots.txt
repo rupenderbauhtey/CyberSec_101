@@ -1,0 +1,15 @@
+Robots.txt
+
+When we spider a host/website it lists all the links of the pages it has , but there are some important pages also, like admin login page which should not be easily available to the public. So to hide these files from automated spiders and web crawlers , links to these important web pages are written in this robots.txt file .
+After this , no web crawlers , no spiders will be be able to find this link in the application
+
+So , if we can find the links written in robots.txt we can directly access those links ..
+so how to get the content of robots.txt
+
+1.  wget http://www.example.com/robots.txt
+
+2. curl -O http://www.example.com/robots.txt
+
+
+write any of the above mentioned commands in terminal and you will get the links which are included in this file.
+
