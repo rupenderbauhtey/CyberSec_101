@@ -1,0 +1,21 @@
+Difference between web application and Websites 
+In the Tech World We Always Come across the words Web Application and Website . Ever Wondered What is the basic difference between these two .
+Here We Go.
+Website -
+1. Basically these are information repositories containing static documents and web pages.
+2. They Flow Of interesting/Important Information is One-Way i.e from server to browser .
+3. It doesn’t authenticate the users
+4. All the users and visitors are treated in the same way with the same access and same privileges.
+5. The vulnerabilities are not related to websites itself instead of that the vulnerabilities are related to the servers and web server softwares.
+6. If an attacker attacks the web server or the web server software he will not get sensitive information as all the information is already public. All he can do is modify the web pages or use the server storage and bandwidth to distribute pirated softwares and other illegal content.
+ 
+ 
+Web Applications-
+1. These are basically Multi-Functional , Web-hosted Applications
+2. The Flow of Interesting/Important data is two way, i.e from server to browser and browser to server
+3. It Authenticates its users through various login mechanisms.
+4. Different users and visitors are treated in different ways according to their privileges.
+5. These have proper access control systems for giving access to different users to different parts of the web application according to their level of privileges.
+6. The vulnerabilities are related to the web application as well as the server and web server software.
+7. If an attacker attacks a web application he will get the sensitive information of the users , He can escalate his privileges, He Can Bypass the login mechanism , use the application for his benefits without even paying for it and he can do a lot more destructive stuff once he gets in.
+
