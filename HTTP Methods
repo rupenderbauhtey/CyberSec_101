@@ -1,0 +1,23 @@
+HTTP Methods
+
+GET - The GET Method Is Used to retrieve the resources requested by the client . It Doesn't alter or change any sort of Data , It just retrieves and provides the requested Resource.
+
+HEAD - The HEAD Method Is very Identical to the GET method but the only difference is that when we send a request using the HEAD method , the response we get from the server doesn't contain the message Body. This Method is used to check the validity of hyperlinks , check any recent changes etc.
+
+POST- The POST Method is used to invoke functions at the back end , In this method mostly a new entity is created or deleted  like a new comment , registering a new user , deleting an account etc. The action taken to POST requests can vary and sometimes even the requested action is not performed and this can be due to several reasons.
+
+PUT- The PUT method is used to invoke the functions at the back end , In this no new entity will be created instead of that it updates the existing entity like updating an existing comment , updating your account , updating a blog etc . Again,  The action taken to PUT request can vary and sometimes even the requested action is not performed and this can be due to several reasons.
+
+DELETE- The DELETE  method is used when the client wants to delete a resource from the server . In this , the user tells the server to delete a specific resource using the DELETE method .
+
+TRACE-  The TRACE method is a very uncommon method and used very rarely . In the TRACE method the request message is reflected back to the requester in the response . This Helps in knowing what actually the server is receiving and uses that information for testing and diagnosis of any issue.
+
+CONNECT - This method is reserved for proxy , When you are using Proxy . It is used to access the websites which require SSL , Over a proxy Network .
+
+OPTION-  This method is used to request the information from the server about the communication methods available. For example, calling for OPTIONS may indicate that the server
+accepts GET, POST, HEAD, TRACE and OPTIONS calls but not PUT or DELETE.
+
+
+
+
+
