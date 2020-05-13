@@ -1,0 +1,23 @@
+HTML Injection - Beginners
+
+
+This is a vulnerability which is caused by improper sanitization of the user input. In this A tester inputs a html code in an input field and the web application / server processes it as a code and sends back the output of the code . Sometimes the output is stored on the server and sometimes it is reflected back to the tester/user .
+
+Effects of this vulnerability-
+this vulnerability for
+1. Phishing
+2. Defacing The website
+and many more disastrous Things
+
+How to find This Vulnerability?
+
+1.  Open any Web application and find input points in it .
+2. Once you find a Input field , try giving a simple html code to that input field
+for example -
+<h1> Rupender </h1>
+if it gives back you the output of the code that means the website is vulnerable to HTML Injection.
+
+How to protect web applications from this vulnerability?
+1. sanitize the inputs from the user
+2. encode the special characters given by the user
+3. treat every input given by user as it is given to attack the web application and check it 
