@@ -1,0 +1,27 @@
+Five Stages Of Ethical Hacking
+Reconnaissance  (Information gathering
+Passive Recon -
+Suppose you are attacking a company , so in case of passive recon  you will not go to companies website or anything related directly to the company , instead of that you will go for other sources like facebook , google , LinkedIn for gathering information about the company . This is called Passive Recon
+Active Recon -
+In case of active recon , you directly go to companies resources like company's website and network to collect information about the company , its like hitting the actual target to get information about it
+
+Scanning And Enumeration
+So this part is Somewhat similar to doing recon , But as it contains two parts we will dig into both one by one
+Scanning -
+Scanning involves gathering information about the target , like open ports , outdated service versions running , vulnerabilities etc  . In this part we collect all these information and collect it at one place so that we can get a better picture of the target .
+Enumeration -
+After we have collected all the information by all the means available . we derive valuable information from that data . Suppose we have found that a web server is running an outdated service , now we will search that if we have an exploit available for that outdated service . So basically Enumeration is analyzing the collected information about the target .
+
+3.  Gaining Access -
+So after scanning and enumeration of the data collected  , In this phase we break into the machine and get access to it . In short we Exploit it . This can be through anything like open ports, any vulnerability or any outdated service . so basically in this phase we try and get access to the machine .
+
+
+
+
+
+4 . Maintaining Access -
+So once you break into the machine and get access to it , it's very important to keep that access maintained . In this Phase you again scan and enumerate to find out how to maintain the access you got . Suppose you have got access to a machine and just after that the owner shuts down the machine , So the next time the owner powers on the machine you have to do all the hard work again which you did to get into the machine , so you have to find a way in which you can maintain the access you got and the moment , owner powers on the machine again , you get the access
+
+5 . Covering Tracks
+In this phase you clear all the logs the machine might have got , like your IP address , your mac address , any accounts that you have created on that machine or anything which helps the owner to find you out or like if you are a pentester and have uploaded a malware on the machine , so you have to delete it before leaving the machine , otherwise it might harm the machine to a very big extent . 
+
