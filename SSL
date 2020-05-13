@@ -1,0 +1,16 @@
+SSL - Secure Socket Layer 
+SSL stands for Secure Socket Layer.
+So Now the question is what SSL Actually does?
+SSL mainly does 3 things.
+1. Data Integrity -
+Data integrity means that after the moment the sender sends the message there will be no undesired modification or alteration in the message. The message will reach the receiver in as intact position and form as it was when the sender sent it.
+If the above condition is fulfilled then it said that Data Integrity is maintained.
+2. Authentication —
+When a data is sent , it is sent between two nodes or two entities and it is very important that these two entities should be authentic. So this is done By SSL. Before establishing a connection between 2 entities it checks the authenticity of the entities, once it founds that both entities are authentic then only it establishes a connection
+3. Data confidentiality
+SSL ensures that the data which is being sent by the sender to the receiver remains confidential. it means that the data sent can only be read by the receiver and no one in between the path. It does it by encrypting the data . So it ensures that the data is secure from eavesdropping i.e secretly reading the data in the path while transportation of data.
+What is the position of SSL?
+SSL is placed between the Application Layer And the Transportation Layer.
+So first the data is sent by Application Layer to SSL. Then SSL performs its functions. Then the data is transferred to the transport layer to transport ahead
+On the receiver's end first data is received by Transport Layer and then it is sent to SSL . SSL performs its functions which is supposed to perform by it at receivers end i.e checking integrity , doing decryption etc and then data is transferred to Application Layer
+
