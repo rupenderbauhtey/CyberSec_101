@@ -1,0 +1,32 @@
+Managing User Access And Privileges  
+
+How do web applications Manage user access and privileges?
+
+ There is Common practice of using a web application by different users at the same type but every user of the application has not the same access or same privileges in a web application , some of them might be anonymous user , some of them are common authenticated users which are able to only use the application and some of them are administrators which can even make changes to the application . So all these have different accesses and different privileges in an application ,for example in a hotel booking application an ordinary user should be able to see only his bookings not of the other users. Giving access to users according to their roles is a very difficult task . so most of the applications use these technologies to maintain access control .
+
+     1. Authentication-
+
+Authentication is the basic mechanism deployed by almost all the web                               applications to recognize the user . The most basic type of authentication technique is providing every user with a unique username and password . while issuing the username and password and even if the user chooses the username and password , the web application sets the access and privileges for the user.
+As the user enters his unique username and password. The web application validates this username and password with its database and if it finds it correct then it provides you access and privileges according to the username and password the user entered.
+    
+
+      2. Session Management
+
+
+After logging in in the web application , while using the web application the user makes a series of  HTTP requests to the server . Now different users have different users have different accesses
+for example- the anonymous users have the least access and privileges , ordinary authenticated users have more access and privileges and administrators have more privileges and access.
+but the question is that , there are a no. of users making a no. of requests . how will the server differentiate between them
+Here the session management comes in role
+when a user starts using the application or he logs in .. the servers provide it with a session token containing a session id, after that every request made by that particular user will contain  that session token and session id provided to him along with the request .
+By this the servers know that this request is made from this session and the user having this session has this much access and privileges.
+
+
+      3.   Access Control
+
+
+When The User has logged in successfully and he or she is provided with the session token . Then he makes an HTTP request along with his session token. Then Access Control Mechanism comes into play .
+when a user makes a HTTP request along with its session token then access control system processes the request and checks the user's access and privileges and if the the user has the access and privilege to access the  page he requested then his request is fulfilled otherwise the request is declined
+
+And that is how the most of the web applications manage user accesses and privileges 
+
+
