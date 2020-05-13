@@ -1,0 +1,14 @@
+User Directed Spidering
+
+Automated spidering is fast but it comes with some disadvantages with it . when we don't want speed but want to avoid these disadvantages , we use user directed spidering there
+
+How does User Directed Spidering Works ?
+In this type of spidering the user explores the web application as usual , the spidering software side by side records all the links visited , HTTP Requests , HTTP Responses . The User Keeps visiting the links and in this type of spidering the responsibility is on the user / tester to visit every link possible . because only those links will be recorded which he visits .
+
+Advantages of User Directed Spidering over Automated spidering
+
+As I have mentioned in a previous post that in automated spidering the softwares uses preset values for html forms which leads to many problems eventually but in the case of user directed spidering the user enters the input manually . that is very helpful as it helps in discovering more content by reaching to some more features and links
+
+While in a logged in session, the automated Spidering process hits the logout button several times that causes the ending of the session and sometimes it happens again and again . but while doing user directed spidering the user /tester can definitely avoid clicking on these buttons .
+
+THE MAIN DISADVANTAGE OF USER DIRECTED SPIDERING IS THAT IT IS VERY SLOW AS COMPARED TO AUTOMATED SPIDERING .
