@@ -1,0 +1,22 @@
+Brute Forcing SSH
+
+
+Using Hydra 
+
+-> hydra -L usr/share/wordlists/metasploit/unix_users.txt -P  usr/share/wordlists/metasploit/unix_users.txt  ssh://192.168.x.x:22 -t 4 -V
+
+Explaining the command - 
+-L usr/share/wordlists/metasploit/unix_users.txt 
+In this "-L" Is the the parameter which takes the location of  list of usernames as Argument and "usr/share/wordlists/metasploit/unix_users.txt"  is the exact location of  the list of usernames 
+
+-P  usr/share/wordlists/metasploit/unix_users.txt  
+In this -P is the parameter which takes the exact location of the list of passwords , and  
+"usr/share/wordlists/metasploit/unix_users.txt" is the exact location of the list of the passwords 
+
+ssh://192.168.x.x:22
+In this "192.168.x.x" is the ip address of the target machine , and ":22" is the port no. on which the SSH service is running 
+
+-t 4 
+"-t" is for specifying the no. of threads in bruteforcing , more the no. more the speed of the process
+
+-V is for verbosity , So that we can see the whole process , what username is used with which password .  
